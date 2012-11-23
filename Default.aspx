@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="Stylesheet" href="Styles/style.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="Scripts/jquery-1.7.1.js" ></script>
 <script type="text/javascript" src="Scripts/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="Scripts/animation_logo/logo.js"></script>
@@ -30,8 +31,21 @@
                  <img id="fifth" src="Images/Logo/fifth.png" />
                  <img id="sixth" src="Images/Logo/sixth.png" />
              <div class="logo_small">
-                 <img src="Images/Logo/logo.png" />
+                 <img id="logo" src="Images/Logo/logo.png" /><br />
+                 <asp:HyperLink ID="login" runat="server">Enter</asp:HyperLink>
              </div>
+                 <!--Скрытый блок для входа начало-->
+                     <div class="enter">
+                         <div class="enter_info">
+                         <asp:Label ID="email" runat="server" Text="email:"></asp:Label><asp:TextBox ID="email_input" runat="server"></asp:TextBox>
+                         <asp:Label ID="pass" runat="server" Text="password:"></asp:Label><asp:TextBox ID="pass_input" runat="server"></asp:TextBox>
+                         </div>
+                         <div class="enter_submit">
+                         <asp:Button ID="Button1" runat="server" Text="Button" />
+                         <asp:HyperLink ID="Registration" runat="server" NavigateUrl="~/Registration.aspx">Регистрация</asp:HyperLink>
+                         </div>
+                     </div>
+                 <!--Скрытый блок для входа конец -->
              </div>
          </div>
          <div class="right">
