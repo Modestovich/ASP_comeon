@@ -41,11 +41,31 @@
                          <asp:Label ID="pass" runat="server" Text="password:"></asp:Label><asp:TextBox ID="pass_input" runat="server"></asp:TextBox>
                          </div>
                          <div class="enter_submit">
-                         <asp:Button ID="Button1" runat="server" Text="Button" />
-                         <asp:HyperLink ID="Registration" runat="server" NavigateUrl="~/Registration.aspx">Регистрация</asp:HyperLink>
+                         <asp:Button ID="Enter" runat="server" Text="Enter" />
+                         <asp:HyperLink ID="Registration" runat="server">Registration</asp:HyperLink>
                          </div>
                      </div>
                  <!--Скрытый блок для входа конец -->
+                 <!--Скрытый блок для регистрации начало -->
+                    <div class="registration">
+                       <div class="registration_label">
+                           <asp:Label ID="cellphone_label" runat="server" Text="cellphone:"></asp:Label><br />
+                           <asp:Label ID="mail_label" runat="server" Text="mail:"></asp:Label><br />
+                           <asp:Label ID="password_label" runat="server" Text="password:"></asp:Label><br />
+                           <asp:Label ID="password_confirm_label" runat="server" Text="password confirm:"></asp:Label><br />
+                       </div>
+                       <div class="registration_input">
+                           <asp:TextBox ID="cellphone_input" runat="server"></asp:TextBox>
+                           <asp:TextBox ID="mail_input" runat="server"></asp:TextBox>
+                           <asp:TextBox ID="password_input" runat="server"></asp:TextBox>
+                           <asp:TextBox ID="password_confirm_input" runat="server"></asp:TextBox>
+                       </div>
+                        <div class="reg_footer">
+                         <asp:Button ID="reg" runat="server" Text="Confirm" />
+                         <asp:HyperLink ID="back_enter" runat="server">Back</asp:HyperLink>
+                        </div>
+                  </div>
+                 <!--Скрытый блок для регистрации конец --> 
              </div>
          </div>
          <div class="right">

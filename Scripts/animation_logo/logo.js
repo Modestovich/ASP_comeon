@@ -41,7 +41,7 @@
             }
          );
         //end slider loading
-        //onclick function 
+        //enter onclick function 
         $('#login').click(function click() {
             $("img#first").animate({
                 marginLeft: 130 + "px",
@@ -79,6 +79,22 @@
             //end onclick;
             $("img#logo").css('display', 'none');
             $('#login').css('display', 'none');
+        });
+        //registration form start
+        $('#Registration').click(function () {
+            $('div.enter').animate(
+                $('div.enter').css('display', 'none'),
+           400,
+                $('div.registration').css('display', 'block')
+            );
+        });
+        //registration form end;
+        $('#back_enter').click(function () {
+            $('div.registration').animate(
+            $('div.registration').css('display', 'none'),
+            400,
+            $('div.enter').css('display', 'block')
+            );
         });
     });
 });

@@ -138,6 +138,9 @@ div.enter_info {
     height: 50px;
     padding-top: 75px;
 }
+div.enter_submit {
+    margin-left: 25px;
+}
 #email {
     float:left;
     top: 2px;
@@ -155,7 +158,56 @@ div.enter_info {
 #pass_input {
     float:right;
 }
+#Registration {
+    color:orange;
+    text-decoration:none;
+}
+#Registration:hover {
+    text-decoration:underline;
+}
 /*hidden box enter end*/
+/*Registration start*/
+div.registration {
+    width: 381px;
+    height: 150px;
+    display: none;
+    position: relative;
+    top: 225px;
+    left: 110px;
+}
+div.registration_label {
+    float: left;
+    width: 135px;
+    height: 120px;
+    text-align: right;
+    margin-left: -5px;
+    font-size: 14px;
+}
+div.registration_label span {
+    top: 0px;
+    position: relative;
+    line-height: 27px;
+    left: 15px;
+}
+div.registration_input {
+    float: right;
+    width: 235px;
+    height:120px;
+}
+div.registration_input input {
+    width:125px;
+}
+div.reg_footer {
+    margin-left:85px;
+}
+#back_enter {
+    color:orange;
+    text-decoration:none;
+}
+#back_enter:hover {
+    text-decoration:underline;
+}
+/*Registration end*/
 /*Content end*/
 div.right {
    position: relative;

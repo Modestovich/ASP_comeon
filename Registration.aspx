@@ -24,7 +24,19 @@
          </div>
          <div class="content">
            <div class="registration">
-
+               <div class="registration_label">
+                   <asp:Label ID="cellphone_label" runat="server" Text="cellphone:"></asp:Label>
+                   <asp:Label ID="mail_label" runat="server" Text="mail:"></asp:Label>
+                   <asp:Label ID="password_label" runat="server" Text="password:"></asp:Label>
+                   <asp:Label ID="password_confirm_label" runat="server" Text="password confirm:"></asp:Label>
+               </div>
+               <div class="registration_input">
+                   <asp:TextBox ID="cellphone_input" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="mail_input" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="password_input" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="password_confirm_input" runat="server"></asp:TextBox>
+               </div>
+               <asp:Button ID="reg" runat="server" Text="Confirm" />
            </div> 
          </div>
          <div class="right">
